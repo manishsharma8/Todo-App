@@ -83,7 +83,7 @@ const TaskModal = (props) => {
                                     <span className="hover:bg-gray-100 rounded-md cursor-pointer p-1">{emoji}</span>
                                 </div>
                                 {showEmoji && 
-                                    <div className="mt-5 mb-10 absolute -left-72 -top-4 z-20 rounded-2xl">
+                                    <div className="mt-5 mb-10 absolute lg:-left-72 lg:-top-4 rounded-2xl">
                                         <Picker 
                                             native 
                                             onEmojiClick={(e, ej)=>{

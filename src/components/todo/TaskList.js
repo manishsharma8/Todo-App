@@ -46,12 +46,12 @@ const TaskList = (props) => {
                         >
                             <Menu.Items
                                 static
-                                className="absolute mt-3 rigth-0 divide-y divide-blue-100 w-40 bg-blue-100 p-2 rounded-md"
+                                className="absolute mt-3 lg:right-32 right-10 divide-y divide-blue-100 w-40 bg-blue-100 p-2 rounded-md"
                             >
                                 <Menu.Item>
                                 {({ active }) => (
                                     <span
-                                        className={`${active && "bg-blue-500 text-white"} w-full flex rounded-md p-2`}
+                                        className={`${active && "bg-blue-500 text-white"} w-full flex rounded-md p-1`}
                                         onClick={()=> {
                                             setEdit(true)
                                             setOpen(true)
@@ -72,7 +72,7 @@ const TaskList = (props) => {
                                 <Menu.Item>
                                 {({ active }) => (
                                     <span
-                                        className={`${active && "bg-blue-500 text-white"} w-full flex rounded-md p-2`}
+                                        className={`${active && "bg-blue-500 text-white"} w-full flex rounded-md p-1`}
                                         onClick={() => props.deleteTask(index)}
                                     >
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 my-auto mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -95,10 +95,10 @@ const TaskList = (props) => {
         <>
         <Droppable droppableId="tasks">
             {(provided) => (
-                <div {...provided.droppableProps} ref={provided.innerRef} className="grid md:grid-cols-5 md:m-0 md:mt-10 m-10">
+                <div {...provided.droppableProps} ref={provided.innerRef} className="grid md:grid-cols-5 md:m-0 md:mt-10 m-7">
                     <div className="md:col-start-2 md:col-end-5 grid grid-flow-row align-middle divide-y-2 divide-blue-100">
                         <div className="grid mb-3">
-                            <div className="text-5xl font-semibold text-blue-900"><span className="text-4xl mr-2">✔️</span>Task List</div>
+                            <div className="text-4xl md:text-5xl font-semibold text-indigo-500">Task List</div>
                         </div>
                         <div className="row-start-3">
                             <div className="mt-5">
