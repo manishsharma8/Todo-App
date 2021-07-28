@@ -1,4 +1,4 @@
-# A Simple Draggable Todo List with Emojis :poop:
+# A Simple Draggable Todo List with Emojis :rocket:
 Just a simple todo list app to get my hands on React + Redux CRED operations
 <br />
 View Demo [Here](http://draggable-todo-list.netlify.app)
